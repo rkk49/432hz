@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<style>
+		* {
+			font-size: 1em;
+		}
+		table{
+			display: flex;
+			width: 100px;
+			height: 60px;
+			margin: 800px 100px 50px 200px;
+		}
+		td{
+			display: inline-flex;
+			width: 100px;
+			height: 60px;
+			justify-content: center;
+			text-align: center;
+			border: black solid 1px;
+		}
+		tr{
+			display: flex;
+		}
+		</style>
+	</head>
+	<body>
+	<script>
+		var a = "A";
+		var b = "A#";
+		var c = "B";
+		var d = "C";
+		var e = "C#";
+		var f = "D";
+		var g = "D#";
+		var h = "E";
+		var i = "F";
+		var j = "F#";
+		var k = "G";
+		var l = "G#";
+
+
+		var geloven	= [a,b,c,d,e,f,g,h,i,j,k,l];
+		var leren	= [b,c,d,e,f,g,h,i,j,k,l,a];
+		var gebeuren	= [c,d,e,f,g,h,i,j,k,l,a,b];
+		var bestuderen	= [d,e,f,g,h,i,j,k,l,a,b,c];
+		var innoveren	= [e,f,g,h,i,j,k,l,a,a,b,c,d];
+		var afstellen	= [f,g,h,i,j,k,l,a,b,c,d,e];
+		var weten	= [g,h,i,j,k,l,a,b,c,d,e,f];
+		var beoordelen	= [h,i,j,k,l,a,b,c,d,e,f,g];
+		var bevestigen	= [i,j,k,l,a,b,c,d,e,f,g,h];
+		var tien	= [j,k,l,a,b,c,d,e,f,g,h,i];
+		var elf	= [k,l,a,b,c,d,e,f,g,h,i,j];
+		var twaalf	= [a,b,c,d,e,f,g,h,i,j,k,l];
+
+		var integers	= [
+										(0+1+1+1+1+1+1+1),
+										(3+1+1+1+1+1+1+1),
+										(6+1+1+1+1+1+1-12+1),
+										(9+1+1+1-12+1+1+1),
+										(2+1+1+1+1+1+1+1),
+										(5+1+1+1+1+1+1+1-12),
+										(7+1+1+1+1+1-12+1+1),
+									];
+	// var notes	= [5,2,10,7,3,0,8];
+
+	function matrix(x){
+			document.write("<table>");
+			for(j=7; j>0; j--){
+			document.write("<tr>")
+			for (i=0; i<7; i++){
+				document.write("<td>" + x[integers[(i+j)%7]] + "</td>");
+			}
+				document.write("</tr>");
+			}
+			document.write("</table>");
+	}
+
+	matrix(geloven);
+
+	matrix(leren);
+
+	matrix(gebeuren);
+
+	matrix(bestuderen);
+
+	matrix(innoveren);
+
+	matrix(afstellen);
+
+	matrix(weten);
+
+	matrix(beoordelen);
+
+	matrix(bevestigen);
+
+	matrix(tien);
+
+	matrix(elf);
+
+	matrix(twaalf);
+	</script>
+	</body>
+
+</html>
